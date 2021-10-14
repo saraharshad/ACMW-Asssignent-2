@@ -7,12 +7,44 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/name_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:text="Hello! Welcome to my app."
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/name_text"
+        tools:layout_editor_absoluteX="90dp" />
+
+    <EditText
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_tv"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter Text to display"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="Click to continue."
+        app:layout_constraintTop_toBottomOf="@+id/name_text"
+        tools:layout_editor_absoluteX="110dp" />
+
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
